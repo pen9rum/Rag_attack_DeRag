@@ -1,0 +1,3 @@
+query,target_snippet,base_rank,final_rank,tokens_used,function_evals,adv_query
+The Giver is a dramatic movie.,"Thunderdell , also recorded as Thunderdel , Thunderel , Thundrel , Thunderdale , or Thunderbore , was a two-headed giant of Cornwall slain by Jack the Giant-Killer in the stories of Tabart and others . Jeff Rovin 's The Encyclopedia...",339,7,1,902,the giver is a dramatic movie. ∨
+Big Show wrestles.,"is a company that offers information about international politics and economy , does investment consulting based in Minato , Tokyo , Japan . It was established on April 1 , 2005 . Its company 's founder and chairman is Japanese...",72,6,1,230,big show wrestles. enrico
