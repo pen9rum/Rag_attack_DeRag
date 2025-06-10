@@ -1,5 +1,4 @@
-# DeRAG: Black-box Adversarial Attacks on Retrieval-Augmented
- Generation Applications via Prompt Injection
+# DeRAG: Black-box Adversarial Attacks on Retrieval-Augmented Generation Applications via Prompt Injection
 
 ## Abstract
 
