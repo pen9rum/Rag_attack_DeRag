@@ -29,11 +29,8 @@ Open Jupyter Notebook and execute the following two notebooks in order:
 
 ## Environment Setup
 
-Please ensure all dependencies are installed. If a `requirements.txt` file is provided, you can install the required packages with:
+Please ensure all dependencies are installed. Requirements are in **DE_attack_evaluation.ipynb** 
 
-```bash
-pip install -r requirements.txt
-```
 
 ## Datasets
 
