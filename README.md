@@ -1,4 +1,4 @@
-# DeRAG: Differential Evolution Attacks on Retrieval-Augmented Generation Systems
+# DeRAG: Black-box Adversarial Attacks on Retrieval-Augmented Generation Applications via Prompt Injection
 
 ## Abstract
 
