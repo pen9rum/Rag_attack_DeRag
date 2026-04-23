@@ -1,12 +1,8 @@
-# DeRAG: Black-box Adversarial Attacks on Retrieval-Augmented Generation Applications via Prompt Injection
+# Gradient-Free Adversarial Prompt Injection on Retrieval-Augmented Generation via Differential Evolution
 
 ## Abstract
 
-Adversarial prompt attacks can significantly alter the reliability of Retrieval-Augmented Generation (RAG) systems by re-ranking them to produce incorrect outputs. In this work, we present a novel method that applies Differential Evolution (DE) to optimize adversarial prompt suffixes for RAG-based question answering.
-
-Our approach is gradient-free, treating the RAG pipeline as a black box and evolving a population of candidate suffixes to maximize the retrieval rank of a targeted incorrect document. We demonstrate that DE can achieve high attack success rates without requiring access to model gradients. Experiments are conducted on the BEIR QA datasets and the MS MARCO dataset, evaluating attack success at various retrieval rank thresholds under multiple applications. Results show that DE-based prompt optimization attains competitive, and in some cases higher, success rates compared to gradient-based methods such as GGPP, while using only a small number of tokens (≤ 5) in the adversarial suffix.
-
-These findings suggest that differential evolution offers a promising and effective alternative for prompt-based adversarial attacks on RAG systems, contributing to the broader goal of evaluating and improving the robustness of retrieval-augmented large language models.
+Retrieval-augmented generation (RAG) systems improve question answering by grounding language models in retrieved documents, but this dependence on retrieval exposes them to prompt-based adversarial manipulation. We propose **DeRAG**, a gradient-free attack that uses Differential Evolution (DE) to optimize adversarial prompt suffixes that promote a targeted incorrect or harmful document in the retrieval ranking, requiring only query-level access to the retriever's ranking scores. Evaluated on BEIR QA benchmarks across both sparse and dense retrievers, our method matches or surpasses recent baselines, including GGPP and Pandora. We further introduce a readability-aware suffix construction that improves attack stealth by increasing fluency. We also show that DE can detoxify jailbreak prompts to bypass safety-aligned LLMs. The resulting suffixes also evade a RoBERTa-based safety classifier, driving detection performance to near-chance accuracy. Finally, we show that successful promotion of harmful content materially alters downstream RAG responses, highlighting the risks of prompt-level vulnerabilities in retrieval-centric QA pipelines.
 
 ## Repository Structure and Instructions
 
