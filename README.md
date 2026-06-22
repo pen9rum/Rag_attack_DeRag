@@ -1,5 +1,7 @@
 # DEER: Gradient-Free Adversarial Prompt Injection on Retrieval-Augmented Generation via Differential Evolution
 
+### 🎉 Excited to share that our paper has been accepted to **QRS 2026 (short paper)**!
+
 ## Abstract
 
 Retrieval-augmented generation (RAG) systems improve question answering by grounding language models in retrieved documents, but this dependence on retrieval exposes them to prompt-based adversarial manipulation. We propose a method name **DeRAG** (KDD 2025 Workshop), and extend for QRS 2026 as **DEER** (**D**ifferential **E**volution for **E**xploiting **R**etrievers), a gradient-free attack that uses Differential Evolution (DE) to optimize adversarial prompt suffixes that promote a targeted incorrect or harmful document in the retrieval ranking, requiring only query-level access to the retriever's ranking scores. Evaluated on BEIR QA benchmarks across both sparse and dense retrievers, our method matches or surpasses recent baselines, including GGPP and Pandora. We further introduce a readability-aware suffix construction that improves attack stealth by increasing fluency, and show that the resulting suffixes evade a RoBERTa-based safety classifier, driving detection performance to near-chance accuracy. Finally, we show that successful promotion of harmful content materially alters downstream RAG responses, highlighting the risks of prompt-level vulnerabilities in retrieval-centric QA pipelines.
